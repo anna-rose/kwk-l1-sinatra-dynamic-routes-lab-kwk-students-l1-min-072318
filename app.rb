@@ -7,5 +7,7 @@ class App < Sinatra::Base
   get '/square/:number'
   
   end
-  get 
+  get '/say/:number/:phrase'
+  @user_name = params[:name].to_s 
+  @user_name = params[:name]
 end
