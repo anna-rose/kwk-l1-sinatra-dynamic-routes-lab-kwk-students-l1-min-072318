@@ -5,7 +5,7 @@ class App < Sinatra::Base
   @user_name = params[:name].reverse
   end
   get '/square/:number'
-  @phrase = params[:phrase]
+  num1 = params[:num1].to_i
   end
   get '/say/:number/:phrase'
   num1 = params[:num1].to_i
