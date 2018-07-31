@@ -22,6 +22,10 @@ class App < Sinatra::Base
   "#{word1} #{word2} #{word3} #{word4} #{word5}"
   end 
   get '/:operation/:number1/:number2' do
-  @
+  @operation = params[:operation]
+  num1 = params[:num1].to_i
+  num2 = params[:num2].to_i
+  if :operation = multiply
+    (num2*)
   end 
 end
