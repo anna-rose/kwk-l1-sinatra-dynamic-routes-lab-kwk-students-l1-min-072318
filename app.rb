@@ -6,12 +6,12 @@ class App < Sinatra::Base
   end
   get '/square/:number'
   num1 = params[:num1].to_i
-  (num1*num1)
+  (num1*num1).to_s
   end
   get '/say/:number/:phrase'
-  num = params[:num].to_i
+  num1 = params[:num].to_i
   @phrase = params[:phrase]
-  "(#{@phrase}*num)"
+  (#{@phrase}*num)
   end 
   get '/say/:word1/:word2/:word3/:word4/:word5'
   word1 = params[:word1]
