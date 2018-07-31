@@ -27,5 +27,14 @@ class App < Sinatra::Base
   num2 = params[:num2].to_i
   if :operation = multiply
     (num2*num1).to_s
+  elsif :operation = divide
+    (num2 / num1).to_s
+  elsif :operation = add
+    (num2+num1).to_s
+  elsif :operation = subject
+    (num2-num1).to_s
+  else 
+    "sorry"
   end 
+end 
 end
