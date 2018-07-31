@@ -4,5 +4,8 @@ class App < Sinatra::Base
   get '/reversename/:name'
   @user_name = params[:name].reverse
   end
+  get '/square/:number'
+  
+  end
   get 
 end
