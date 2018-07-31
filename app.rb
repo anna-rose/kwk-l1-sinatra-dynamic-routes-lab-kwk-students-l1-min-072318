@@ -11,7 +11,7 @@ class App < Sinatra::Base
   get '/say/:number/:phrase' do
   num = params[:num].to_i
   @phrase = params[:phrase]
-  (*num)
+  (@phrase*num)
   end 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
   word1 = params[:word1]
@@ -25,13 +25,13 @@ class App < Sinatra::Base
   @operation = params[:operation]
   num1 = params[:num1].to_i
   num2 = params[:num2].to_i
-  if :operation = multiply
+  if :operation == multiply
     (num2*num1).to_s
-  elsif :operation = divide
+  elsif :operation == divide
     (num2 / num1).to_s
-  elsif :operation = add
+  elsif :operation == add
     (num2+num1).to_s
-  elsif :operation = subject
+  elsif :operation == subtract
     (num2-num1).to_s
   else 
     "sorry"
