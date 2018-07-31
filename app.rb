@@ -9,9 +9,9 @@ class App < Sinatra::Base
   
   end
   get '/say/:number/:phrase'
-  num1 = params[:num1].to_i
+  num = params[:num1].to_i
   @phrase = params[:phrase]
-  "#{@phrase}"
+  "(#{@phrase}*num)"
   end 
   get '/say/:word1/:word2/:word3/:word4/:word5'
   
