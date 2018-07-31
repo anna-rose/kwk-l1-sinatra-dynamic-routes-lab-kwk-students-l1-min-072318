@@ -30,7 +30,7 @@ class App < Sinatra::Base
   elsif :operation == divide
     (number1 / number2).to_s
   elsif :operation == add
-    (number2++number1).to_s
+    (number1++number2).to_s
   elsif :operation == subtract
     (number1-number2).to_s
   else 
